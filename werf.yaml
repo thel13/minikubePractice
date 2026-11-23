@@ -1,0 +1,6 @@
+project: k8s
+configVersion: 1
+---
+image: ubuntu-test
+dockerfile: DockerFile.test
+
