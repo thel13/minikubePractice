@@ -2,5 +2,11 @@ project: k8s
 configVersion: 1
 ---
 image: ubuntu-test
-dockerfile: DockerFile.test
-
+from: ubuntu:22.04
+git:
+  - add: /
+    to: /
+shell:
+  install:
+    - apt update
+    - apt install -y curl
