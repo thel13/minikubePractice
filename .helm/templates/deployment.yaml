@@ -19,6 +19,5 @@ spec:
       containers:
       - name: nginx
         image: {{ .Values.werf.image.app }}
-        command: ["/goapp"]
         ports:
         - containerPort: 80
