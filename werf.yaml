@@ -9,6 +9,7 @@ git:
 shell:
   install:
     - cd /app
+    - export GOMAXPROCS=1 GOFLAGS=-p=1
     - go mod download
   setup:
     - cd /app
